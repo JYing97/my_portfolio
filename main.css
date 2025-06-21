@@ -1,0 +1,126 @@
+
+#hero_intro{
+    background-color: #212529;
+    color: white;
+}
+
+#hero_intro h1 {
+    color: white;
+    /* color: rgb(162, 174, 185); */
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+#type-text {
+    color:white;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+#about {
+    background-color: #212529;
+    color: white;
+}
+
+#footer_design{
+    background-color: #212529;
+    color: white;
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 30%;
+    background-image: url('./image/profilepic.jpg');
+    background-size: cover;
+    background-position: center;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+}
+
+/* .test{
+    background-color: antiquewhite;
+    height: 100px;
+    width: 100px;
+} */
+
+.intro-text {
+    position: absolute;
+    font-size: 10px;
+    left: 50%;
+    top: 50%; 
+    transform: translateX(0%);
+    z-index: 2;
+    visibility: hidden;
+    text-shadow: 2px 2px 2px black;
+    /* width: 38%;
+    height: 30%; */
+}
+
+.intro_group:hover .profile_hover div {
+    opacity: 1;
+    transition-duration: 0.5s;
+    transform: translateX(-100%);
+}
+
+.intro_group:hover .intro-text {
+    opacity: 1;
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+    font-size: 20px;
+    top: 43%;
+    transform: translateX(-10%);
+    visibility: visible;
+    backdrop-filter: blur(8px);
+}
+
+@media (max-width: 920px) {
+    #hero_intro h1 {
+        font-size: 1.3rem; 
+        top: 20% !important;
+    }
+
+    .profile-pic{
+        width: 180px;
+        height: 180px;
+        border-radius:50%;
+    }
+
+    .profile_top {
+        top: 45% !important;
+    }
+
+    .intro_group:hover .profile_hover div {
+        opacity: 1;
+        transition-duration: 0s;
+        transform: translateX(0%);   
+    }
+
+    .intro_group:hover .intro-text {
+        opacity: 1;
+        transition-delay: 0.5s;
+        transition-duration: 0.5s;
+        top: 68%;
+        left: 10%;
+        transform: translateX(-10%);
+        transform: translateY(-10%);
+        visibility: visible;
+        backdrop-filter: blur(8px);   
+    }
+
+    #type-text{
+        font-size: 0.95rem;
+    }
+
+    .intro-text{
+        width:80%;
+    }
+}
+
+@media (max-width: 600px) {
+    #type-text {
+        font-size: 0.75rem;
+    }
+}
