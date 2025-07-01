@@ -1,3 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-overflow-scrolling: touch;
+}
+
 #main_body {
     min-height: 3000px;
 }
