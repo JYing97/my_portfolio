@@ -404,11 +404,13 @@
       profile_trigger();
 
       window.addEventListener("resize", () => {
-        clearTimeout(typingTimeout); // Stop typing if still going
-        hasTyped = false;
-        index = 0;
-        target.innerHTML = ""; // Reset the text when resize
-        profile_trigger();
+        if (window.innerWidth > 800) {
+          clearTimeout(typingTimeout); // Stop typing if still going
+          hasTyped = false;
+          index = 0;
+          target.innerHTML = ""; // Reset the text when resize
+          profile_trigger();
+        }
       });
     </script>
 
