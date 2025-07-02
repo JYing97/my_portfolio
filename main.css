@@ -4,6 +4,7 @@ html {
 
 body {
     -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
 }
 
 #main_body {
@@ -231,7 +232,7 @@ body {
     }
 
     #my_hobby {
-        min-height: 5500px;   
+        min-height: 5800px;   
     }
     
     .profile_group {

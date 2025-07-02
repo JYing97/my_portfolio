@@ -20,6 +20,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <link rel="stylesheet" href="background.css" />
     <link rel="stylesheet" href="main.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-53ZPKGL9BS"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-53ZPKGL9BS');
+    </script>
 </head>
 <body id="my_hobby">
     <!-- background -->
@@ -103,7 +113,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 py-5 d-flex justify-content-center align-items-center">
-                    <div class="p-5 border rounded div_bg_colour">
+                    <div class="p-5 border rounded div_bg_colour" data-aos="fade-right" data-aos-duration="3000">
                         <p>I’m not a professional hiker, but I simply love enjoying the beautiful scenery from the top of a mountain.<br><br>Reaching the summit fills me with a deep sense of accomplishment and satisfaction that stays long after the climb.</p>
                     </div>
                 </div>
@@ -116,7 +126,7 @@
             <div class="row">
                 <h2>Sport: Trekathon / Fun run</h2>
                 <div class="col-md-6 py-5 d-flex justify-content-center align-items-center">
-                    <div class="p-5 border rounded div_bg_colour">
+                    <div class="p-5 border rounded div_bg_colour" data-aos="fade-right" data-aos-duration="3000">
                         <p>During my university years, I actively embraced the challenge of joining trekathons and runs. <br><br> Crossing each finish line gave me a sense of achievement. </p>
                     </div>
                 </div>
@@ -187,7 +197,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 py-5 d-flex justify-content-center align-items-center">
-                    <div class="p-5 border rounded div_bg_colour">
+                    <div class="p-5 border rounded div_bg_colour" data-aos="fade-right" data-aos-duration="3000">
                         <p>I enjoy trying trendy sports — lately, pickleball.<br><br>I'm not a professional, but I truly enjoy the energy and fun it brings.<br><br>On January 16th, 2025, I took part in our site’s sports fest as one of the players in the pickleball competition.<br><br>No prize won, but the experience and spirit live on.</p>
                     </div>
                 </div>
@@ -200,20 +210,42 @@
             <div class="row">
                 <h2>Music: Piano</h2>
                 <div class="col-md-6 py-5 d-flex justify-content-center align-items-center">
-                    <div class="p-5 border rounded div_bg_colour">
+                    <div class="p-5 border rounded div_bg_colour" data-aos="fade-right" data-aos-duration="3000">
                         <p>I have been learning the piano since I was young and, with dedication, passed every grade exam without a single failure. <br><br>I'm truly grateful to my parents for their unwavering support — not only for encouraging my passion but also for providing the financial means to pursue this lifelong love for music. </p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div id="piano_carousel" class="carousel slide">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#piano_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#piano_carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
                         <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./image/hobby/piano_grade8.png" class="d-block p-5" style="height: 500px; width: 400px;" alt="Grade 8 piano pass with Merit">
+                            <img src="./image/hobby/piano_grade8.png" class="d-block p-5" style="height: 500px; width: 400px;" alt="Grade 8 piano pass with Merit.">
                             <div class="carousel-caption d-none d-md-block">
-                                <p style="color: black; background-color: white;">Grade 8 piano pass with Merit</p>
+                                <p style="color: black; background-color: white;">Grade 8 piano pass with Merit.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center mb-5 mx-5">
+                                <video id="player" playsinline controls style="height: 500px; width: 400px;">
+                                    <source src="./image/hobby/piano_video.mp4" type="video/mp4" />
+                                </video>
+                                <div class="carousel-caption d-none d-md-block carousel-caption-top">
+                                    <p style="color: black; background-color: white; font-size: smaller;">Though it’s not perfect, I hope you enjoyed listening to it.</p>
+                                </div>
                             </div>
                         </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#piano_carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#piano_carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>  
@@ -255,7 +287,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 py-5 d-flex justify-content-center align-items-center">
-                    <div class="p-5 border rounded div_bg_colour">
+                    <div class="p-5 border rounded div_bg_colour" data-aos="fade-right" data-aos-duration="3000">
                         <p>Recently, I discovered a new hobby — dancing. <br><br>With countless hours of practice behind the scenes, I gathered the courage to step onto the competition stage and was honoured to win 3rd place on June 1st, 2025. <br><br>Although I have since put this hobby on hold to focus on other priorities and interests, the memories and lessons it gave me will always stay with me.</p>
                     </div>
                 </div>
@@ -266,8 +298,18 @@
     <script src="./background.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
-      AOS.init();
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 800) {  
+            const elements = document.querySelectorAll('[data-aos="fade-right"]');
+            elements.forEach(el => {
+                el.removeAttribute('data-aos');
+                el.removeAttribute('data-aos-duration');
+            });
+            }
+            AOS.init();
+        });
     </script>
 
 </body>
